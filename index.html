@@ -1,1 +1,154 @@
-<h1>hello</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>DenserNet: Weakly Supervised Visual Localization Using Multi-Scale Feature Aggregation</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Google icon
+  -------------------------------------------------- -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Analytics
+  -------------------------------------------------- -->
+
+  <!-- Hover effect: https://codepen.io/nxworld/pen/ZYNOBZ -->
+  <style>
+    img {
+        display: block;
+    }
+
+    .column-50 {
+        float: left;
+        width: 50%;
+    }
+    .row-50:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .floating-teaser {
+        float: left;
+        width: 30%;
+        text-align: center;
+        padding: 15px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+
+        <h4 style="text-align:center">DenserNet: Weakly Supervised Visual Localization Using Multi-Scale Feature Aggregation</h4>
+
+        <p align="center", style="margin-bottom:12px;">
+        <a class="simple">Dongfang Liu</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="simple">Yiming Cui</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="simple">Liqi Yan</a><sup>3</sup></p>
+        <a class="simple">Christos Mousas</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="simple">Baijian Yang</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="simple">Yingjie Chen</a><sup>1</sup></p>
+        <p align="center" style="margin-bottom:20px;">
+
+        <sup>1</sup>Purdue University
+        <span style="display:inline-block; width: 32px"></span>
+        <sup>2</sup>University of Florida
+        <span style="display:inline-block; width: 32px"></span>
+        <sup>3</sup>Westlake University
+		</p>
+
+		<p align="center">35th AAAI Conference on Artificial Intelligence 2021</p>
+        <figure>
+            <img src="images/shellconv_new.png" style="width:100%"></img>
+            <br>
+        </figure>
+        <br>
+        <div id="teaser" class="container" style="width:100%; margin:0; padding:0">
+            <p align="justify">
+			<br>
+			 In this work, we introduce a Denser Feature Network (DenserNet) for visual localization. Our work provides three principal contributions. First, we develop a convolutional neural network (CNN) architecture which aggregates feature maps at different semantic levels for image representations. Using denser feature maps, our method can produce more keypoint  features and increase image retrieval accuracy. Second, our model is trained end-to-end without pixel-level annotation other than positive and negative GPS-tagged image pairs. We use a weakly supervised  triplet ranking loss to learn discriminative features and encourage keypoint feature repeatability for image representation. Finally, our method is computationally efficient as our architecture has shared features and  parameters during  computation.  Our method can perform accurate large-scale localization  under  challenging  conditions  while  remaining the  computational  constraint. Extensive experiment results indicate that our method sets a new state-of-the-art on four challenging large-scale localization benchmarks and three image retrieval benchmarks. 
+          </p>
+
+        </div>
+
+        <!-- ------------------------------------- -->
+
+        <div class="section">
+            <h5>Materials</h5>
+            <div class="container" style="width:95%">
+				<!-- Icon row -->
+				<div class="row">
+<!-- 				  <div class="two columns">
+					  <a href="https://arxiv.org/pdf/1908.06295.pdf"><img style="border: 1px solid #ddd; border-radius: 4px; padding: 2px; width: 108px;" src="images/paper.jpg"></a>
+				  </div>
+				  <div class="five columns">
+					  <a href="data/poster.pdf"><img style="border: 1px solid #ddd; border-radius: 4px; padding: 6px; width: 280px;" src="images/poster.jpg"></a>
+				  </div>
+				  <div class="two columns">
+					  <a href="https://github.com/hkust-vgd/shellnet"><img style="border: 1px solid #ddd; border-radius: 4px; padding: 0px; width: 116px;" src="images/code.png"></a>
+				  </div>                     -->
+				</div>
+				<!-- Link row -->
+				<div class="row">
+<!-- 				  <div class="two columns">                  
+					  <a href="https://arxiv.org/pdf/1908.06295.pdf">Paper</a>
+				  </div>
+				  <div class="five columns">
+					  <a href="data/poster.pdf">Poster</a>
+				  </div>
+                  <div class="two columns">
+					  <a href="https://github.com/hkust-vgd/shellnet">Code</a>
+				  </div> -->
+				</div>
+				<br>
+
+            </div>
+        </div>
+
+		<!-- ------------------------------------- -->
+		<div class="section">
+            <h5>Citation</h5>
+<!-- <pre style="margin:0"><code>@inproceedings{zhang-shellnet-iccv19,
+    title = {ShellNet: Efficient Point Cloud Convolutional Neural Networks using Concentric Shells Statistics},
+    author = {Zhiyuan Zhang and Binh-Son Hua and Sai-Kit Yeung},
+    booktitle = {International Conference on Computer Vision (ICCV)},
+    year = {2019}
+}</code></pre> -->
+		</div>
+
+        <!-- ------------------------------------- -->
+        <br>
+
+  </div>
+
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
